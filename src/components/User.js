@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../styles.css';
 
 class User extends React.Component {
     render() {
         return (
-            <div>
+            <div className='user-container'>
                 <div className='user-pic'>
                     <img src='' alt='user pic here' />
                 </div>

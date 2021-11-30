@@ -1,0 +1,17 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+}
+
+.user-container {
+    display: flex;
+}
+
+.follower-container {
+    display: flex;
+}
