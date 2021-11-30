@@ -3,14 +3,20 @@ import Follower from './Follower';
 import styles from '../styles.css';
 
 class FollowerList extends React.Component {
+    constructor() {
+        super();
+    }
+
     render() {
+        const { followers } = this.props;
+
         return  (
             <div>
                 <h1>Followers:</h1>
                 <div className='follower-container'>
-                    <Follower />
-                    <Follower />
-                    <Follower />
+                    {followers.map((follower, index) => {
+                        return <Follower key={index} follower={follower} className='follower' />
+                    })}
                 </div>
             </div>
         )
