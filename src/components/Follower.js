@@ -1,4 +1,5 @@
 import React from "react";
+import styles from '../styles.css';
 
 class Follower extends React.Component {
     constructor() {
@@ -7,11 +8,13 @@ class Follower extends React.Component {
 
     render() {
         const { follower } = this.props;
-        
+
         return (
-            <div>
-                <img src={follower.avatar_url} alt='follower pic here' />
+            <div className='follower'>
+                <>
+                <img className='image' src={follower.avatar_url} alt='follower pic here' />
                 <p>{follower.login}</p>
+                </>
             </div>
         )
     }

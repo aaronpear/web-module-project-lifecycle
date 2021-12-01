@@ -15,7 +15,7 @@ class FollowerList extends React.Component {
                 <h1>Followers:</h1>
                 <div className='follower-container'>
                     {followers.map((follower, index) => {
-                        return <Follower key={index} follower={follower} className='follower' />
+                        return <Follower key={index} follower={follower} />
                     })}
                 </div>
             </div>
